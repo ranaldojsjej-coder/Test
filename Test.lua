@@ -364,3 +364,4 @@ Sec("Move","СКОРОСТЬ")
 TSlider("Move","Скорость","Скорость ходьбы",Cgr,16,500,16,function(on,val)
     pcall(function() cleanTag("ws")
         if on then tagConn("ws",RS.Heartbeat:Connect(function() pcall(function() local _,h=getChar() if h then h.WalkSpeed=val end end) end))
+     
